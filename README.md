@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LearnX - Student Dashboard
 
-## Getting Started
+A modern learning dashboard built using Next.js, Tailwind CSS, Supabase, and Framer Motion.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Modern Bento Grid Layout
+- Responsive Sidebar Navigation
+- Dynamic Course Cards
+- Supabase Database Integration
+- Server-Side Data Fetching
+- Loading State Handling
+- Error Handling
+- Animated Progress Bars
+- Framer Motion Animations
+- Responsive Design
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Supabase
+- Framer Motion
+- Lucide React
+
+## Database Schema
+
+courses
+
+- id
+- title
+- progress
+- icon_name
+- created_at
+
+## Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project uses:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js Server Components for data fetching
+- Supabase PostgreSQL as backend
+- Reusable UI components
+- Component-based architecture
+- Responsive Bento Grid dashboard
 
-## Learn More
+## Challenges Faced
 
-To learn more about Next.js, take a look at the following resources:
+- Connecting Supabase with Next.js
+- Handling loading and error states
+- Creating reusable dashboard components
+- Deploying environment variables on Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Vercel Deployment:
+https://student-dashboard-sigma-five.vercel.app/
 
-## Deploy on Vercel
+## GitHub Repository
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://github.com/Anshi-G/student-dashboard
